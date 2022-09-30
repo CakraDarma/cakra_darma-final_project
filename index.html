@@ -4,7 +4,126 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Cakra Portofolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sourcesans: ["Source Sans Pro"],
+                        },
+                        colors: {
+                            wpu: "#bada55",
+                            kopi: "#c0ffee",
+                        },
+                        animation: {
+                            "spin-slow": "spin 3s linear infinite",
+                            goyang: "goyang 1s ease-in-out infinite",
+                        },
+                        keyframes: {
+                            goyang: {
+                                "0%, 100%": { transform: "rotate(-3deg)" },
+                                "50%": { transform: "rotate(3deg)" },
+                            },
+                        },
+                    },
+                },
+            };
+        </script>
     </head>
-    <body></body>
+
+    <!--- 
+Buatlah sebuah private repository di Github dan gunakan sebagai repositori kerja. Bagilah proyek menjadi beberapa task dan commit secara berkala sesuai dengan task-nya dan berikan commit message yang sesuai.
+
+        <sectiion id="personal-info">
+            nama : h1
+            deskripsi : p
+        </sectiion>
+    
+        <section id="pendidikan">
+            "latar belakang pendidikan" : h1
+            masing masing :sma kuliah : h2
+            tahun pendidikan : p
+        </section>
+    
+        <section id="portofolio">
+            12 portofolio dummy
+            "portofolio" : h1
+            jusul portofolio : h2
+            deskripsi portofolio : p
+        </section>
+
+        flex : latar belakang edukasi dan portofolio layar kecil untuk small dan medium
+        shadow, background color, background color bergradient
+        https://uigradients.com/#Hydrogen
+        heading ketebalan minimal bold
+
+        Gunakan background-image untuk membuat gambar dengan bentuk yang lebih fleksibel: Buat container-nya terlebih dahulu sesuai dengan keperluan (berikan rounded, shadow, dan lain sebagainya), baru berikan background-image
+
+        Link URL deployment Netlify
+        Link Repository private
+        Hasil screenshoot Deploy log
+
+    -->
+
+    <body class="font-sourcesans">
+        <header>
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                    <div class="px-12">
+                        <a
+                            href="#home"
+                            class="font-bold text-lg text-primary block py-6"
+                            >Cakra Darma</a
+                        >
+                    </div>
+                    <div class="flex items-center px-4">
+                        <nav
+                            id="nav-menu"
+                            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:border-slate-500 dark:border lg:dark:border-none"
+                        >
+                            <ul class="block lg:flex">
+                                <li class="group">
+                                    <a
+                                        href="#home"
+                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="group">
+                                    <a
+                                        href="#about"
+                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                                        >About</a
+                                    >
+                                </li>
+                                <li class="group">
+                                    <a
+                                        href="#Project"
+                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                                        >Project</a
+                                    >
+                                </li>
+                                <li class="group">
+                                    <a
+                                        href="#contact"
+                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
 </html>
