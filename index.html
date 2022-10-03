@@ -1,315 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cakra Portofolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                darkMode: "class",
-                theme: {
-                    extend: {
-                        fontFamily: {
-                            sourcesans: ["Source Sans Pro"],
-                        },
-                        colors: {
-                            wpu: "#bada55",
-                            kopi: "#c0ffee",
-                        },
-                        animation: {
-                            "spin-slow": "spin 3s linear infinite",
-                            goyang: "goyang 1s ease-in-out infinite",
-                        },
-                        keyframes: {
-                            goyang: {
-                                "0%, 100%": { transform: "rotate(-3deg)" },
-                                "50%": { transform: "rotate(3deg)" },
-                            },
-                        },
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cakra Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sourcesans: ["Source Sans Pro"],
                     },
+                    colors: {
+                    },
+                    animation: {
+                    },
+                    keyframes: {
+                    },
+                    boxShadow: {
+                        "solidboxshadow": "11px 11px 0px 0px rgba(0,0,0,1)"
+                    }
                 },
-            };
-            </script>
-    </head>
+            },
+        };
+    </script>
+</head>
 
-    <!--- 
-Buatlah sebuah private repository di Github dan gunakan sebagai repositori kerja. Bagilah proyek menjadi beberapa task dan commit secara berkala sesuai dengan task-nya dan berikan commit message yang sesuai.
+<body class="font-sourcesans">
+    <header class="px-12 lg:px-36">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div>
+                    <a href="#home" class="font-bold text-lg text-primary block py-6">Chakd.dev</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:border-slate-500 dark:border lg:dark:border-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#Project"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Project</a>
+                            </li>
+                            <li class="group">
+                                <a href="#Blog"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <sectiion id="personal-info">
-            nama : h1
-            deskripsi : p
-        </sectiion>
-    
-        <section id="pendidikan">
-            "latar belakang pendidikan" : h1
-            masing masing :sma kuliah : h2
-            tahun pendidikan : p
+
+    <main class="px-12 lg:px-36">
+        <section id="banner">
+            <div class="container lg:flex lg:mt-12 lg:justify-between">
+                <aside class="flex flex-col place-content-center">
+                    <article>
+                        <h1 class="text-slate-900 font-bold text-4xl mt-5 lg:text-5xl">
+                            HI, I am Cakra Darma
+                        </h1>
+                        <p class="leading-loose mt-5 lg:max-w-md lg:text-lg">
+                            Hi, Welcome to my portofoio website. This
+                            website will show my projects and skills during
+                            my career as a website developer.
+                        </p>
+                    </article>
+                    <button
+                        class="my-6 bg-slate-900 px-5 py-2 rounded-xl text-white font-semibold hover:bg-slate-800 active:bg-black  dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100 w-full md:w-fit md:rounded-md md:px-9">
+                        Contact Me
+                    </button>
+                </aside>
+                <aside class="flex justify-center">
+                    <img src="./img/profile.jpeg" alt="profile"
+                        class="mt-4 rounded-xl shadow-xl w-60 object-cover object-center md:w-96" />
+                </aside>
+            </div>
         </section>
-    
-        <section id="portofolio">
-            12 portofolio dummy
-            "portofolio" : h1
-            jusul portofolio : h2
-            deskripsi portofolio : p
-        </section>
 
-        flex : latar belakang edukasi dan portofolio layar kecil untuk small dan medium
-        shadow, background color, background color bergradient
-        https://uigradients.com/#Hydrogen
-        heading ketebalan minimal bold
-
-        Gunakan background-image untuk membuat gambar dengan bentuk yang lebih fleksibel: Buat container-nya terlebih dahulu sesuai dengan keperluan (berikan rounded, shadow, dan lain sebagainya), baru berikan background-image
-
-        Link URL deployment Netlify
-        Link Repository private
-        Hasil screenshoot Deploy log
-
-    -->
-
-    <body class="font-sourcesans">
-        <header>
+        <section id="personal-info">
             <div class="container">
-                <div class="flex items-center justify-between relative">
-                    <div class="px-12">
-                        <a
-                            href="#home"
-                            class="font-bold text-lg text-primary block py-6"
-                            >Cakra Darma</a
-                        >
+                <article>
+                    <h2 class="text-slate-900 font-bold text-2xl mt-16 lg:text-3xl">About Me</h2>
+                    <p class="leading-8 mt-5 lg:max-w-md lg:text-lg">
+                        Hello, my name is A.A Bagus Gede Cakra Darma Saputra.
+                        I'm Information Technology college student from
+                        Udayana University. This is will describe about me.
+                    </p>
+                </article>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
+                    <div class="bg-gray-100 p-6 border-2 w-full h-80">
+                        <div class="w-10 bg-gray-300 p-2">
+                            <img src="./icon/person-simple-run.png" alt="flexible" />
+                        </div>
+                        <article>
+                            <h3 class="text-slate-900 font-semibold text-xl mt-2
+                                ">Flexible</h3>
+                            <p class="leading-8 mt-5 lg:max-w-md text-gray-600">
+                                I can work with team or no and able to solve the
+                                problem.
+                            </p>
+                        </article>
                     </div>
-                    <div class="flex items-center px-4">
-                        <nav
-                            id="nav-menu"
-                            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:border-slate-500 dark:border lg:dark:border-none"
-                        >
-                            <ul class="block lg:flex">
-                                <li class="group">
-                                    <a
-                                        href="#home"
-                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
-                                        >Home</a
-                                    >
-                                </li>
-                                <li class="group">
-                                    <a
-                                        href="#about"
-                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
-                                        >About</a
-                                    >
-                                </li>
-                                <li class="group">
-                                    <a
-                                        href="#Project"
-                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
-                                        >Project</a
-                                    >
-                                </li>
-                                <li class="group">
-                                    <a
-                                        href="#contact"
-                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
-                                        >Contact</a
-                                    >
-                                </li>
-                            </ul>
-                        </nav>
+                    <div class="bg-gray-100 p-6 border-2 w-full h-80">
+                        <div class="w-10 bg-gray-300 p-2 ">
+                            <img src="./icon/wrench.png" alt="" />
+                        </div>
+                        <article>
+                            <h3 class="text-slate-900 font-semibold text-xl mt-2">Tools</h3>
+                            <p class="leading-8 mt-5 lg:max-w-md text-gray-600">
+                                I able to using some tools to develop a website
+                                like basic (HTML, CSS, Javascript, PHP), Library
+                                or framework (Express JS, React JS, Heap JS),
+                                and basic Cloud computing (AWS, GCP)
+                            </p>
+                        </article>
+                    </div>
+                    <div class="bg-gray-100 p-6 border-2 w-full h-80">
+                        <div class="w-10 bg-gray-300 p-2">
+                            <img src="./icon/target.png" alt="goals" />
+                        </div>
+                        <article>
+                            <h3 class="text-slate-900 font-semibold text-xl mt-2">Have a target</h3>
+                            <p class="leading-8 mt-5 lg:max-w-md text-gray-600">
+                                I always have a target that I use to improve my
+                                self.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="bg-gray-100 p-6 border-2 w-full h-80">
+                        <div class="w-10 bg-gray-300 p-2">
+                            <img src="./icon/chats-teardrop.png" alt="target" />
+                        </div>
+                        <article>
+                            <h3 class="text-slate-900 font-semibold text-xl mt-2">Communication</h3>
+                            <p class="leading-8 mt-5 lg:max-w-md text-gray-600">
+                                I have a good communication with team to explain
+                                my opinion.
+                            </p>
+                        </article>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <!-- <div class="icon-media-social">
-            <a href="https://github.com/CakraDarma" target="_blank">
-                <img src="./icon/github-logo.png" alt="github" />
-            </a>
-            <a
-                href="https://www.linkedin.com/in/cakra-darma-34b468214/"
-                target="_blank"
-            >
-                <img src="./icon/linkedin-logo (1).png" alt="linkedin" />
-            </a>
-        </div> -->
 
-        <main class="px-12">
-            <section id="banner">
-                <div class="container lg:flex lg:mt-12 lg:justify-between">
-                    <aside>
-                        <article>
-                            <h1 class="text-slate-900 font-bold text-4xl mt-5 lg:text-5xl">
-                                HI, I am Cakra Darma
-                            </h1>
-                            <p class="leading-8 mt-5 lg:max-w-md lg:text-lg">
-                                Hi, Welcome to my portofoio website. This
-                                website will show my projects and skills during
-                                my career as a website developer.
-                            </p>
-                        </article>
-                        <button
-                            class="my-6 bg-slate-900 px-5 py-2 rounded-xl text-white font-semibold hover:bg-slate-800 active:bg-black  dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100 w-full md:w-fit md:rounded-md md:px-9"
-                        >
-                            Contact Me
-                        </button>
-                    </aside>
-                    <aside class="flex justify-center">
-                            <img src="./img/profile.jpeg" alt="profile" class="mt-4 rounded-xl shadow-xl w-60 object-cover object-center md:w-96" />
-                        </div>
-                    </aside>
-            </section>
-
-            <section id="about">
-                <div class="container">
-                    <article>
-                        <h2 class="text-slate-900 font-bold text-2xl mt-16 lg:text-3xl">About Me</h2>
-                        <p class="leading-8 mt-5 lg:max-w-md lg:text-lg">
-                            Hello, my name is A.A Bagus Gede Cakra Darma Saputra.
-                            I'm Information Technology college student from
-                            Udayana University. This describe more about me.
-                        </p>
-                    </article>
-                    <div class="flex flex-wrap mt-6 gap-5 justify-center align-middle">
-                        <div class="bg-gray-100 p-6 border-2 max-w-xs">
-                            <div class="w-10 bg-gray-300 p-2">
-                                <img
-                                    src="./icon/person-simple-run.png"
-                                    alt="flexible"
-                                />
-                            </div>
-                            <article>
-                                <h3 class="text-slate-900 font-semibold text-xl mt-2
-                                ">Flexible</h3>
-                                <p class="leading-8 mt-5 lg:max-w-md text-gray-600">
-                                    I can work with team or no and able to solve the
-                                    problem.
-                                </p>
-                            </article>
-                        </div>
-                        <div class="bg-gray-100 p-6 border-2 max-w-xs">
-                            <div class="w-10 bg-gray-300 p-2">
-                                <img src="./icon/wrench.png" alt="" />
-                            </div>
-                            <article>
-                                <h3 class="text-slate-900 font-semibold text-xl mt-2">Tools</h3>
-                                <p class="leading-8 mt-5 lg:max-w-md text-gray-600">
-                                    I able to using some tools to develop a website
-                                    like basic (HTML, CSS, Javascript, PHP), Library
-                                    or framework (Express JS, React JS, Heap JS),
-                                    and basic Cloud computing (AWS, GCP)
-                                </p>
-                            </article>
-                        </div>
-                        <div class="bg-gray-100 p-6 border-2 max-w-xs">
-                            <div class="w-10 bg-gray-300 p-2">
-                                <img src="./icon/target.png" alt="goals" />
-                            </div>
-                            <article>
-                                <h3 class="text-slate-900 font-semibold text-xl mt-2">Have a target</h3>
-                                <p class="leading-8 mt-5 lg:max-w-md text-gray-600">
-                                    I always have a target that I use to improve my
-                                    self.
-                                </p>
-                            </article>
-                        </div>
-                        <div class="bg-gray-100 p-6 border-2 max-w-xs">
-                            <div class="w-10 bg-gray-300 p-2">
-                                <img src="./icon/chats-teardrop.png" alt="target" />
-                            </div>
-                            <article>
-                                <h3 class="text-slate-900 font-semibold text-xl mt-2">Communication</h3>
-                                <p class="leading-8 mt-5 lg:max-w-md text-gray-600">
-                                    I have a good communication with team to explain
-                                    my opinion.
-                                </p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="project" class="mt-14">
-                <article class="max-w-xl mx-auto text-center mb-16">
-                        <h2 class="text-slate-900 font-bold text-2xl mt-16 lg:text-3xl">Project That I Have Build</h2>
-                        <p class="leading-8 mt-5 lg:text-lg">This is a project that I made for a college assignment
-                            or for self-study purposes</p>
+        <section id="education" class="mt-10">
+            <div class="container">
+                <article class="max-w-xl mx-auto text-center mb-10">
+                    <h2 class="text-slate-900 font-bold text-2xl mt-16 lg:text-3xl">Timeline Education</h2>
+                    <p class="leading-8 mt-5 lg:text-lg">Take a look at my timeline below, it consists of my Education.
+                    </p>
                 </article>
-                
-                <div class="container mx-auto px-4 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly mt-12">
-                    <div class="mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
-                        <img src="./img/project-1.jpg" alt="Project 1" class="w-full" />
-                        <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2 text-slate-700">HasilTaniBali.id</div>
-                            <p class="text-slate-600 mb-10 lg:text-lg">Marketplace for farmers selling crops</p>
-                            <a href="#" target="_blank" class="underline mt-96"
-                            >See Details</a
-                        >
-                        </div>
-                    </div>
-                    <div class="mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
-                        <img src="./img/project-2.png" alt="Project 1" class="w-full" />
-                        <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2 text-slate-700">SayurBoxku</div>
-                            <p class="text-slate-600 mb-10 lg:text-lg">E-commerce for selling vegetable and delivery to costumer</p>
-                            <a href="#" target="_blank" class="underline mt-96"
-                            >See Details</a
-                        >
-                        </div>
-                    </div>
-                    <div class="mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
-                        <img src="./img/project-3.png" alt="Project 1" class="w-full" />
-                        <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2 text-slate-700">Laundry Management System</div>
-                            <p class="text-slate-600 mb-10 lg:text-lg">App for management costumer laundry data</p>
-                            <a href="#" target="_blank" class="underline mt-96"
-                            >See Details</a
-                        >
-                        </div>
-                    </div>
-                    
+
+                <div class="max-w-2xl mx-auto">
+                    <ol class="relative border-l border-gray-200 dark:border-gray-700">
+                        <li class="mb-10 ml-4">
+                            <div class="absolute w-3 h-3 bg-black rounded-full -left-1.5 border border-white">
+                            </div>
+                            <h3 class="font-semibold mb-1 text-slate-900 text-2xl">College</h3>
+                            <div class="flex flex-row items-center">
+                                <div class="w-3 h-3 overflow-hidden">
+                                    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M4 16h16V5H4v11zm9 2v2h4v2H7v-2h4v-2H2.992A.998.998 0 0 1 2 16.993V4.007C2 3.451 2.455 3 2.992 3h18.016c.548 0 .992.449.992 1.007v12.986c0 .556-.455 1.007-.992 1.007H13z" />
+                                    </svg>
+                                </div>
+                                <p class="text-black">—</p>
+                                <p class=" text-justify text-gray-600">
+                                    Universitas Udayana
+                                </p>
+                            </div>
+                            <time
+                                class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Feb
+                                2022 - now</time>
+                        </li>
+                        <li class="mb-10 ml-4">
+                            <div class="absolute w-3 h-3 bg-black rounded-full -left-1.5 border border-white">
+                            </div>
+                            <h3 class="font-semibold mb-1 text-slate-900 text-2xl">High School</h3>
+                            <div class="flex flex-row items-center">
+                                <div class="w-3 h-3 overflow-hidden">
+                                    <svg
+                                                stroke="currentColor"
+                                                fill="currentColor"
+                                                stroke-width="0"
+                                                viewBox="0 0 20 20"
+                                                height="1em"
+                                                width="1em"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="w-full h-full"
+                                            >
+                                            <path
+                                            d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"
+                                        ></path>
+                                            </svg>
+                                </div>
+                                <p class="text-black">—</p>
+                                <p class=" text-justify text-gray-600">
+                                    SMAN 1 Denpasar
+                                </p>
+                            </div>
+                            <time
+                                class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Apr 2017 - 2022</time>
+                        </li>
+                    </ol>
                 </div>
-                <!-- <a href="#" class="btn btn--full" id="btn-project"
+            </div>
+        </section>
+
+        <section id="portofolio" class="mt-24">
+            <div class="container">
+                <article class="max-w-xl mx-auto text-center mb-10">
+                    <h2 class="text-slate-900 font-bold text-2xl mt-16 lg:text-3xl">Personal Portofolio</h2>
+                    <p class="leading-8 mt-5 lg:text-lg">This is a project that I made for a college assignment
+                        or for self-study purposes</p>
+                </article>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
+                    <div
+                        class="bg-white p-3 w-full h-30 border-solid border-black border-2 solidshadow hover:shadow-solidboxshadow transition">
+                        <article>
+                            <h3 class="text-slate-900 font-semibold text-2xl mt-2">NEXT.js Blog</h3>
+                            <p class="leading-8 mt-5 lg:max-w-md text-gray-600">NEXT.js starter blog with MDX, Tailwind
+                                CSS, TypeScript, pre-configured Development
+                                Environment.</p>
+                            <div class="container flex flex-row gap-2 mb-5 mt-3">
+                                <div class="w-6 h-6 overflow-hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M12 18.178l4.62-1.256.623-6.778H9.026L8.822 7.89h8.626l.227-2.211H6.325l.636 6.678h7.82l-.261 2.866-2.52.667-2.52-.667-.158-1.844h-2.27l.329 3.544L12 18.178zM3 2h18l-1.623 18L12 22l-7.377-2L3 2z"
+                                            fill="rgba(255,69,69,1)" />
+                                    </svg>
+                                </div>
+                                <div class="w-6 h-6 overflow-hidden">
+                                    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M12 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-.528 2.994c.175.21.351.414.528.609.177-.195.353-.398.528-.609a24.883 24.883 0 0 1-1.056 0zm-1.995-.125a20.678 20.678 0 0 1-2.285-.368c-.075.35-.132.69-.17 1.016-.19 1.583.075 2.545.478 2.777.403.233 1.368-.019 2.645-.974.263-.197.528-.416.794-.655a20.678 20.678 0 0 1-1.462-1.796zm7.331-.368c-.717.16-1.483.284-2.285.368a20.678 20.678 0 0 1-1.462 1.796c.266.24.531.458.794.655 1.277.955 2.242 1.207 2.645.974.403-.232.667-1.194.479-2.777a11.36 11.36 0 0 0-.17-1.016zm1.45-.387c.577 2.639.274 4.74-1.008 5.48-1.282.74-3.253-.048-5.25-1.867-1.997 1.819-3.968 2.606-5.25 1.866-1.282-.74-1.585-2.84-1.009-5.48C3.167 14.794 1.5 13.48 1.5 12s1.667-2.793 4.241-3.614c-.576-2.639-.273-4.74 1.009-5.48 1.282-.74 3.253.048 5.25 1.867 1.997-1.819 3.968-2.606 5.25-1.866 1.282.74 1.585 2.84 1.009 5.48C20.833 9.206 22.5 10.52 22.5 12s-1.667 2.793-4.241 3.614zm-7.32-9.779a11.36 11.36 0 0 0-.793-.655C8.868 4.225 7.903 3.973 7.5 4.206c-.403.232-.667 1.194-.479 2.777.04.327.096.666.17 1.016a20.678 20.678 0 0 1 2.286-.368c.475-.653.965-1.254 1.462-1.796zm3.585 1.796c.802.084 1.568.209 2.285.368.075-.35.132-.69.17-1.016.19-1.583-.075-2.545-.478-2.777-.403-.233-1.368.019-2.645.974a11.36 11.36 0 0 0-.794.655c.497.542.987 1.143 1.462 1.796zm-1.995-.125c-.175-.21-.351-.414-.528-.609-.177.195-.353.398-.528.609a24.884 24.884 0 0 1 1.056 0zm-4.156 7.198a24.884 24.884 0 0 1-.528-.914c-.095.257-.183.51-.263.761.257.056.521.107.79.153zm1.932.234a22.897 22.897 0 0 0 3.392 0A22.897 22.897 0 0 0 15.392 12a22.897 22.897 0 0 0-1.696-2.938 22.897 22.897 0 0 0-3.392 0A22.897 22.897 0 0 0 8.608 12a22.897 22.897 0 0 0 1.696 2.938zm5.852-4.728c.095-.257.183-.51.263-.761a17.974 17.974 0 0 0-.79-.153 24.884 24.884 0 0 1 .527.914zM6.13 9.837c-.34.11-.662.23-.964.36C3.701 10.825 3 11.535 3 12c0 .465.7 1.175 2.166 1.803.302.13.624.25.964.36.222-.7.497-1.426.825-2.163a20.678 20.678 0 0 1-.825-2.163zm1.45-.388c.081.25.169.504.264.76a24.884 24.884 0 0 1 .528-.913c-.27.046-.534.097-.791.153zm10.29 4.714c.34-.11.662-.23.964-.36C20.299 13.175 21 12.465 21 12c0-.465-.7-1.175-2.166-1.803a11.36 11.36 0 0 0-.964-.36c-.222.7-.497 1.426-.825 2.163.328.737.603 1.462.825 2.163zm-1.45.388c-.081-.25-.169-.504-.264-.76a24.884 24.884 0 0 1-.528.913c.27-.046.534-.097.791-.153z"
+                                            fill="rgba(51,223,244,1)" />
+                                    </svg>
+                                </div>
+                                <div class="w-6 h-6 overflow-hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm13.464 12.536L20 12l-3.536-3.536L15.05 9.88 17.172 12l-2.122 2.121 1.414 1.415zM6.828 12L8.95 9.879 7.536 8.464 4 12l3.536 3.536L8.95 14.12 6.828 12zm4.416 5l3.64-10h-2.128l-3.64 10h2.128z"
+                                            fill="rgba(91,85,85,1)" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" target="_blank" class="underline text-blue-500 font-semibold mt-96">See
+                                Details</a>
+                        </article>
+                    </div>
+                    <div
+                        class="bg-white p-3 w-full h-30 border-solid border-black border-2 solidshadow hover:shadow-solidboxshadow transition">
+                        <article>
+                            <h3 class="text-slate-900 font-semibold text-2xl mt-2">Expense App</h3>
+                            <p class="leading-8 mt-5 lg:max-w-md text-gray-600">ExpenseApp is an app to see you expense
+                                history, income history and help you notes what you're buying lately💰</p>
+                            <div class="container flex flex-row gap-2 mb-5 mt-3">
+                                <div class="w-6 h-6 overflow-hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M12 18.178l4.62-1.256.623-6.778H9.026L8.822 7.89h8.626l.227-2.211H6.325l.636 6.678h7.82l-.261 2.866-2.52.667-2.52-.667-.158-1.844h-2.27l.329 3.544L12 18.178zM3 2h18l-1.623 18L12 22l-7.377-2L3 2z"
+                                            fill="rgba(255,69,69,1)" />
+                                    </svg>
+                                </div>
+                                <div class="w-6 h-6 overflow-hidden">
+                                    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M12 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-.528 2.994c.175.21.351.414.528.609.177-.195.353-.398.528-.609a24.883 24.883 0 0 1-1.056 0zm-1.995-.125a20.678 20.678 0 0 1-2.285-.368c-.075.35-.132.69-.17 1.016-.19 1.583.075 2.545.478 2.777.403.233 1.368-.019 2.645-.974.263-.197.528-.416.794-.655a20.678 20.678 0 0 1-1.462-1.796zm7.331-.368c-.717.16-1.483.284-2.285.368a20.678 20.678 0 0 1-1.462 1.796c.266.24.531.458.794.655 1.277.955 2.242 1.207 2.645.974.403-.232.667-1.194.479-2.777a11.36 11.36 0 0 0-.17-1.016zm1.45-.387c.577 2.639.274 4.74-1.008 5.48-1.282.74-3.253-.048-5.25-1.867-1.997 1.819-3.968 2.606-5.25 1.866-1.282-.74-1.585-2.84-1.009-5.48C3.167 14.794 1.5 13.48 1.5 12s1.667-2.793 4.241-3.614c-.576-2.639-.273-4.74 1.009-5.48 1.282-.74 3.253.048 5.25 1.867 1.997-1.819 3.968-2.606 5.25-1.866 1.282.74 1.585 2.84 1.009 5.48C20.833 9.206 22.5 10.52 22.5 12s-1.667 2.793-4.241 3.614zm-7.32-9.779a11.36 11.36 0 0 0-.793-.655C8.868 4.225 7.903 3.973 7.5 4.206c-.403.232-.667 1.194-.479 2.777.04.327.096.666.17 1.016a20.678 20.678 0 0 1 2.286-.368c.475-.653.965-1.254 1.462-1.796zm3.585 1.796c.802.084 1.568.209 2.285.368.075-.35.132-.69.17-1.016.19-1.583-.075-2.545-.478-2.777-.403-.233-1.368.019-2.645.974a11.36 11.36 0 0 0-.794.655c.497.542.987 1.143 1.462 1.796zm-1.995-.125c-.175-.21-.351-.414-.528-.609-.177.195-.353.398-.528.609a24.884 24.884 0 0 1 1.056 0zm-4.156 7.198a24.884 24.884 0 0 1-.528-.914c-.095.257-.183.51-.263.761.257.056.521.107.79.153zm1.932.234a22.897 22.897 0 0 0 3.392 0A22.897 22.897 0 0 0 15.392 12a22.897 22.897 0 0 0-1.696-2.938 22.897 22.897 0 0 0-3.392 0A22.897 22.897 0 0 0 8.608 12a22.897 22.897 0 0 0 1.696 2.938zm5.852-4.728c.095-.257.183-.51.263-.761a17.974 17.974 0 0 0-.79-.153 24.884 24.884 0 0 1 .527.914zM6.13 9.837c-.34.11-.662.23-.964.36C3.701 10.825 3 11.535 3 12c0 .465.7 1.175 2.166 1.803.302.13.624.25.964.36.222-.7.497-1.426.825-2.163a20.678 20.678 0 0 1-.825-2.163zm1.45-.388c.081.25.169.504.264.76a24.884 24.884 0 0 1 .528-.913c-.27.046-.534.097-.791.153zm10.29 4.714c.34-.11.662-.23.964-.36C20.299 13.175 21 12.465 21 12c0-.465-.7-1.175-2.166-1.803a11.36 11.36 0 0 0-.964-.36c-.222.7-.497 1.426-.825 2.163.328.737.603 1.462.825 2.163zm-1.45.388c-.081-.25-.169-.504-.264-.76a24.884 24.884 0 0 1-.528.913c.27-.046.534-.097.791-.153z"
+                                            fill="rgba(51,223,244,1)" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" target="_blank" class="underline text-blue-500 font-semibold mt-96">See
+                                Details</a>
+                        </article>
+
+
+
+                    </div>
+                    <div
+                        class="bg-white p-3 w-full h-30 border-solid border-black border-2 solidshadow hover:shadow-solidboxshadow transition">
+                        <article>
+                            <h3 class="text-slate-900 font-semibold text-2xl mt-2">React Ngobs</h3>
+                            <p class="leading-8 mt-5 lg:max-w-md text-gray-600">Chat app with React, and Firebase,
+                                simple and can be accessed by everyone</p>
+                            <div class="container flex flex-row gap-2 mb-5 mt-3">
+                                <div class="w-6 h-6 overflow-hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M12 18.178l4.62-1.256.623-6.778H9.026L8.822 7.89h8.626l.227-2.211H6.325l.636 6.678h7.82l-.261 2.866-2.52.667-2.52-.667-.158-1.844h-2.27l.329 3.544L12 18.178zM3 2h18l-1.623 18L12 22l-7.377-2L3 2z"
+                                            fill="rgba(255,69,69,1)" />
+                                    </svg>
+                                </div>
+                                <div class="w-6 h-6 overflow-hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm13.464 12.536L20 12l-3.536-3.536L15.05 9.88 17.172 12l-2.122 2.121 1.414 1.415zM6.828 12L8.95 9.879 7.536 8.464 4 12l3.536 3.536L8.95 14.12 6.828 12zm4.416 5l3.64-10h-2.128l-3.64 10h2.128z"
+                                            fill="rgba(91,85,85,1)" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" target="_blank" class="underline text-blue-500 font-semibold mt-96">See
+                                Details</a>
+                        </article>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- <div class="container mx-auto px-4 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly mt-12">
+                <div class="mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+                    <img src="./img/project-1.jpg" alt="Project 1" class="w-full" />
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 text-slate-700">HasilTaniBali.id</div>
+                        <p class="text-slate-600 mb-10 lg:text-lg">Marketplace for farmers selling crops</p>
+                        <a href="#" target="_blank" class="underline mt-96">See Details</a>
+                    </div>
+                </div>
+                <div class="mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+                    <img src="./img/project-2.png" alt="Project 1" class="w-full" />
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 text-slate-700">SayurBoxku</div>
+                        <p class="text-slate-600 mb-10 lg:text-lg">E-commerce for selling vegetable and delivery to
+                            costumer</p>
+                        <a href="#" target="_blank" class="underline mt-96">See Details</a>
+                    </div>
+                </div>
+                <div class="mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+                    <img src="./img/project-3.png" alt="Project 1" class="w-full" />
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 text-slate-700">Laundry Management System</div>
+                        <p class="text-slate-600 mb-10 lg:text-lg">App for management costumer laundry data</p>
+                        <a href="#" target="_blank" class="underline mt-96">See Details</a>
+                    </div>
+                </div> -->
+
+            </div>
+            <!-- <a href="#" class="btn btn--full" id="btn-project"
                     >More...</a
                 > -->
-            </section>
+        </section>
 
-            <section id="contact" class="pt-4 pb-32 dark:bg-slate-800">
-                <article class="max-w-xl mx-auto text-center mb-16">
-                    <h2 class="text-slate-900 font-bold text-2xl mt-16 lg:text-3xl">Contact Me</h2>
-                    <p class="leading-8 mt-5 lg:text-lg">Get intouch with me I will respond within a day</p>
-                </article>
+        <section id="contact" class="pt-4 pb-32 dark:bg-slate-800">
+            <article class="max-w-xl mx-auto text-center mb-16">
+                <h2 class="text-slate-900 font-bold text-2xl mt-16 lg:text-3xl">Contact Me</h2>
+                <p class="leading-8 mt-5 lg:text-lg">Get intouch with me I will respond within a day</p>
+            </article>
 
-                    <form>
-                        <div class="w-full lg:w-2/3 lg:mx-auto">
-                            <div class="w-full px-4 mb-8">
-                                <label for="name" class="font-bold">Name</label>
-                                <input type="text" id="name" class="w-full bg-gray-200 text-dark p-3 rounded-md focus:outline-gray-300" placeholder="Your Name..." >
-                            </div>
-                            <div class="w-full px-4 mb-8">
-                                <label for="email" class="font-bold">Email</label>
-                                <input type="email" id="email" class="w-full bg-gray-200 text-dark p-3 rounded-md focus:outline-gray-300" placeholder="Your Email..." >
-                            </div>
-                            <div class="w-full px-4 mb-8">
-                                <label for="message" class="font-bold">Message</label>
-                                <textarea type="email" id="email" class="w-full bg-gray-200 text-dark p-3 rounded-md focus:outline-gray-300 h-56" placeholder="Body Message..." ></textarea>
-                            </div>
-                            <div class="w-full px-4">
-                                <button class="my-6 bg-slate-900 px-5 py-2 rounded-xl text-white font-semibold hover:bg-slate-800 active:bg-black w-full">Contact Me</button>
-                            </div>
-                        </div>
-                    </form>
+            <form>
+                <div class="w-full lg:w-2/3 lg:mx-auto">
+                    <div class="w-full px-4 mb-8">
+                        <label for="name" class="font-bold">Name</label>
+                        <input type="text" id="name"
+                            class="w-full bg-gray-200 text-dark p-3 rounded-md focus:outline-gray-300"
+                            placeholder="Your Name...">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="email" class="font-bold">Email</label>
+                        <input type="email" id="email"
+                            class="w-full bg-gray-200 text-dark p-3 rounded-md focus:outline-gray-300"
+                            placeholder="Your Email...">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="message" class="font-bold">Message</label>
+                        <textarea type="email" id="email"
+                            class="w-full bg-gray-200 text-dark p-3 rounded-md focus:outline-gray-300 h-56"
+                            placeholder="Body Message..."></textarea>
+                    </div>
+                    <div class="w-full px-4">
+                        <button
+                            class="my-6 bg-slate-900 px-5 py-2 rounded-xl text-white font-semibold hover:bg-slate-800 active:bg-black w-full">Contact
+                            Me</button>
+                    </div>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <p class="text-center">
-                Copyright &copy; 2022 &ndash; Cakra Darma's Portofolio
-            </p>
-        </footer>
-    </body>
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer class="px-12 lg:px-36">
+        <div class="container p-6 mx-auto">
+            <div class="lg:flex">
+                <div class="w-full -mx-6 lg:w-2/5">
+                    <div class="px-6">
+                        <div>
+                            <a href="#"
+                                class="text-4xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Chakd.dev</a>
+                        </div>
+
+                        <p class="max-w-sm mt-2 text-gray-500 dark:text-gray-400">Hi, please contact me on one of my
+                            social account if you have question about web development. I'll be happy to help!</p>
+
+                        <div class="flex mt-6 -mx-2">
+                            <a href="https://www.linkedin.com/in/cakra-darma-34b468214/" target="_blank"
+                                class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path
+                                        d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 0 1-1.548-1.549 1.548 1.548 0 1 1 1.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z" />
+                                </svg>
+                            </a>
+
+                            <a href="https://github.com/CakraDarma" target="_blank"
+                                class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path
+                                        d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z" />
+                                </svg>
+                            </a>
+
+                            <a href="https://twitter.com/ABCDS02" target="_blank"
+                                class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path
+                                        d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 lg:mt-0 lg:flex-1">
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                        <div>
+                            <h3 class="text-gray-700 uppercase dark:text-white">About</h3>
+                            <a href="#"
+                                class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Portofolio</a>
+                            <a href="#"
+                                class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Education</a>
+                            <a href="#"
+                                class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">About me</a>
+                        </div>
+
+                        <div>
+                            <h3 class="text-gray-700 uppercase dark:text-white">Blog</h3>
+                            <a href="#"
+                                class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Tec</a>
+                            <a href="#"
+                                class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Music</a>
+                            <a href="#"
+                                class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Videos</a>
+                        </div>
+
+                        <div>
+                            <h3 class="text-gray-700 uppercase dark:text-white">Project</h3>
+                            <a href="#"
+                                class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Pemrajanagungcakti.id</a>
+                            <a href="#"
+                                class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Hasiltanibali.id</a>
+                            <a href="#"
+                                class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Sayurboxku.xyz</a>
+                        </div>
+
+                        <div>
+                            <h3 class="text-gray-700 uppercase dark:text-white">Contact</h3>
+                            <span
+                                class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">baguscakraa02@email.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700">
+
+            <div>
+                <p class="text-center text-gray-500 dark:text-gray-400">© Brand 2022 - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
